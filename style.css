@@ -180,6 +180,34 @@ nav a:hover {
   }
 }
 /* --------------RESPONSIVE------------- */
+@media screen and (max-width: 1420px) {
+  .header-left-container h1 {
+    font-size: 3.2rem;
+  }
+  #target::after {
+    transform: translateY(15px);
+    display: inline-block;
+    content: "";
+    height: 3.6rem;
+    width: 3px;
+    background: black;
+    animation: anim2 0.8s linear infinite;
+  }
+}
+@media screen and (max-width: 1160px) {
+  .header-left-container h1 {
+    font-size: 2.6rem;
+  }
+  #target::after {
+    transform: translateY(15px);
+    display: inline-block;
+    content: "";
+    height: 3.6rem;
+    width: 3px;
+    background: black;
+    animation: anim2 0.8s linear infinite;
+  }
+}
 @media screen and (max-width: 950px) {
   .header {
     display: flex;
@@ -212,7 +240,12 @@ nav a:hover {
     width: 100px;
   }
 }
+
 @media screen and (max-width: 900px) {
+  ul {
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.213);
+  }
   nav {
     flex-direction: column;
     justify-content: center;
@@ -223,7 +256,7 @@ nav a:hover {
     margin-top: 25px;
     display: flex;
     justify-content: space-around;
-    width: 100%;
+    width: 80%;
   }
 }
 @media screen and (max-width: 530px) {
@@ -237,21 +270,24 @@ nav a:hover {
     display: flex;
     justify-content: space-around;
     width: 80%;
-    flex-direction: column;
   }
   nav li {
+    font-size: 0.9rem;
     padding: 5px 0;
   }
   .header {
     margin: 0 auto;
   }
+  .title {
+    margin-bottom: 15px;
+  }
   .header-left-container h1 {
-    font-size: 2.8rem;
+    font-size: 2rem;
   }
   .header-left-container p {
     padding-bottom: 10px;
     font-family: "OnestMid", sans-serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: rgb(108, 108, 108);
     letter-spacing: 1px;
   }
@@ -264,9 +300,18 @@ nav a:hover {
     transform: translateY(15px);
     display: inline-block;
     content: "";
-    height: 4rem;
-    width: 4px;
+    height: 3.1rem;
+    width: 3px;
     background: black;
     animation: anim2 0.8s linear infinite;
+  }
+}
+@media screen and (max-width: 390px) {
+  nav ul {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    flex-direction: column;
   }
 }
