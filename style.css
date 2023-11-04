@@ -131,7 +131,7 @@ nav a:hover {
   max-width: 75%;
   border-radius: 30% 70% 53% 47% / 26% 46% 54% 74%;
   animation: anim 30s infinite;
-  border: 6px solid rgb(0, 0, 0);
+  border: 6px solid rgb(255, 255, 255);
   filter: drop-shadow(0 0 20px rgba(255, 0, 0, 0.66));
 }
 
@@ -145,47 +145,38 @@ nav a:hover {
 
   10% {
     border-radius: 50% 50% 20% 80% / 25% 80% 20% 75%;
-    border: 6px solid rgb(255, 255, 255);
   }
 
   20% {
     border-radius: 67% 33% 47% 53% / 37% 20% 80% 63%;
-    border: 6px solid rgb(0, 0, 0);
   }
 
   30% {
     border-radius: 39% 61% 47% 53% / 37% 40% 60% 63%;
-    border: 6px solid rgb(255, 255, 255);
   }
 
   40% {
     border-radius: 39% 61% 82% 18% / 74% 40% 60% 26%;
-    border: 6px solid rgb(0, 0, 0);
   }
 
   50% {
     border-radius: 100%;
-    border: 6px solid rgb(255, 255, 255);
   }
 
   60% {
     border-radius: 50% 50% 53% 47% / 72% 69% 31% 28%;
-    border: 6px solid rgb(0, 0, 0);
   }
 
   70% {
     border-radius: 50% 50% 53% 47% / 26% 22% 78% 74%;
-    border: 6px solid rgb(255, 255, 255);
   }
 
   80% {
     border-radius: 50% 50% 53% 47% / 26% 69% 31% 74%;
-    border: 6px solid rgb(0, 0, 0);
   }
 
   90% {
     border-radius: 20% 80% 20% 80% / 20% 80% 20% 80%;
-    border: 6px solid rgb(255, 255, 255);
   }
 }
 /* --------------RESPONSIVE------------- */
