@@ -1,0 +1,187 @@
+@font-face {
+  font-family: "Onest";
+  src: url(assets/font/Onest-Regular.ttf);
+}
+@font-face {
+  font-family: "OnestBlack";
+  src: url(assets/font/Onest-Black.ttf);
+}
+@font-face {
+  font-family: "OnestSemi";
+  src: url(assets/font/Onest-SemiBold.ttf);
+}
+@font-face {
+  font-family: "OnestMid";
+  src: url(assets/font/Onest-Medium.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+body {
+  min-height: 100vh;
+}
+/* -------------------NAVIGATION---------------------- */
+header {
+  font-family: "Onest", sans-serif;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 35px 0;
+}
+nav {
+  user-select: none;
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  grid-template-columns: 60% 40%;
+  padding: 10px 20px;
+}
+nav ul {
+  text-align: center;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+nav p {
+  font-family: "OnestBlack", sans-serif;
+  font-size: 1.9rem;
+}
+nav a {
+  color: black;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+nav li {
+  font-family: "OnestSemi", sans-serif;
+  font-size: 1.2rem;
+}
+nav a:hover {
+  color: rgb(108, 108, 108);
+}
+/* -------------------HEADER---------------------- */
+.header {
+  min-height: 80vh;
+  display: grid;
+  margin: 30px auto;
+  align-items: center;
+  grid-template-columns: 50% 50%;
+  text-align: justify;
+}
+.header-left-container {
+  width: 60%;
+  margin: 0 0 0 auto;
+}
+.header-left-container h1 {
+  font-family: "OnestBlack", sans-serif;
+  font-size: 4rem;
+  padding-bottom: 5px;
+}
+#target {
+  /* display: flex; */
+  position: relative;
+  line-height: 1.2em;
+  margin-top: 10px;
+  width: 100%;
+  height: 90px;
+}
+#target::after {
+  content: "";
+  position: absolute;
+  height: 4.5rem;
+  width: 5px;
+  background: black;
+  animation: anim2 0.8s linear infinite;
+}
+@keyframes anim2 {
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.header-left-container p {
+  padding-bottom: 10px;
+  font-family: "OnestMid", sans-serif;
+  font-size: 1.5rem;
+  color: rgb(108, 108, 108);
+  letter-spacing: 1px;
+}
+.tech-stack {
+  display: flex;
+  align-items: center;
+}
+.tech-stack h2 {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  padding-right: 10px;
+  font-family: "OnestBlack", sans-serif;
+  border-right: 1px solid rgba(0, 0, 0, 0.213);
+}
+.tech-stack img {
+  padding-left: 10px;
+  width: 100px;
+}
+.header-left-container i {
+  padding: 10px 0;
+  font-size: 2.3rem;
+  color: black;
+}
+#imgme {
+  margin: 0 auto;
+  width: 60%;
+  border-radius: 30% 70% 53% 47% / 26% 46% 54% 74%;
+  animation: anim 30s infinite;
+  border: 6px solid white;
+  filter: drop-shadow(0 0 10px rgb(255, 0, 0));
+}
+
+/* -------------------ANIMATION---------------------- */
+
+@keyframes anim {
+  0%,
+  100% {
+    border-radius: 30% 70% 70% 30% / 30% 52% 48% 70%;
+  }
+
+  10% {
+    border-radius: 50% 50% 20% 80% / 25% 80% 20% 75%;
+  }
+
+  20% {
+    border-radius: 67% 33% 47% 53% / 37% 20% 80% 63%;
+  }
+
+  30% {
+    border-radius: 39% 61% 47% 53% / 37% 40% 60% 63%;
+  }
+
+  40% {
+    border-radius: 39% 61% 82% 18% / 74% 40% 60% 26%;
+  }
+
+  50% {
+    border-radius: 100%;
+  }
+
+  60% {
+    border-radius: 50% 50% 53% 47% / 72% 69% 31% 28%;
+  }
+
+  70% {
+    border-radius: 50% 50% 53% 47% / 26% 22% 78% 74%;
+  }
+
+  80% {
+    border-radius: 50% 50% 53% 47% / 26% 69% 31% 74%;
+  }
+
+  90% {
+    border-radius: 20% 80% 20% 80% / 20% 80% 20% 80%;
+  }
+}
