@@ -131,8 +131,8 @@ nav a:hover {
   max-width: 75%;
   border-radius: 30% 70% 53% 47% / 26% 46% 54% 74%;
   animation: anim 30s infinite;
-  border: 6px solid rgb(255, 255, 255);
-  filter: drop-shadow(0 0 20px rgba(255, 0, 0, 0.66));
+  border: 6px solid white;
+  box-shadow: rgba(255, 0, 0, 0.66) 0 0 20px;
 }
 
 /* -------------------ANIMATION---------------------- */
