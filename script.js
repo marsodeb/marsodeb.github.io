@@ -1,3 +1,5 @@
+// ----------TEXT TYPING-----------
+
 var _CONTENT = ["Hey !✌️", "I'm...", "Student✍", "Developer Web⏳"];
 
 // Current sentence being processed
@@ -61,3 +63,96 @@ function Delete() {
 
 // Start the typing effect on load
 _INTERVAL_VAL = setInterval(Type, 100);
+
+// ----------NIGHTMODE-----------
+
+var checkbox2 = document.getElementById("darkmode"); //get the checkbox to a variable
+//check storage if dark mode was on or off
+if (sessionStorage.getItem("mode") == "dark") {
+  darkmode2(); //if dark mode was on, run this funtion
+} else {
+  nodark2(); //else run this funtion
+}
+
+//if the checkbox state is changed, run a funtion
+checkbox2.addEventListener("change", function () {
+  //check if the checkbox is checked or not
+  if (checkbox2.checked) {
+    darkmode2(); //if the checkbox is checked, run this funtion
+  } else {
+    nodark2(); //else run this funtion
+  }
+});
+
+//function for checkbox when checkbox is checked
+function darkmode2() {
+  document.body.classList.add("dark-mode");
+  document.documentElement.style.setProperty("--color1", "#ffffff");
+  document.documentElement.style.setProperty("--color2", "#d8d8d8");
+  document.documentElement.style.setProperty("--color4", "#0f0f0f");
+  document.documentElement.style.setProperty("--color5", "rgb(0 0 0 / 93%)"); //add a class to the body tag
+  checkbox2.checked = true; //set checkbox to be checked state
+  sessionStorage.setItem("mode", "dark"); //store a name & value to know that dark mode is on
+}
+
+//function for checkbox when checkbox is not checked
+function nodark2() {
+  document.body.classList.remove("dark-mode");
+  document.documentElement.style.setProperty("--color1", "#000000");
+  document.documentElement.style.setProperty("--color2", "#6c6c6c");
+  document.documentElement.style.setProperty("--color4", "#ffffff"); //remove added class from body tag
+  document.documentElement.style.setProperty(
+    "--color5",
+    "rgba(255, 255, 255, 0.925)"
+  );
+  checkbox2.checked = false; //set checkbox to be unchecked state
+  sessionStorage.setItem("mode", "light"); //store a name & value to know that dark mode is off or light mode is on
+}
+// ----------NIGHTMODEMOBILE-----------
+
+var checkbox = document.getElementById("darkmode2"); //get the checkbox to a variable
+//check storage if dark mode was on or off
+if (sessionStorage.getItem("mode") == "dark") {
+  darkmode(); //if dark mode was on, run this funtion
+} else {
+  nodark(); //else run this funtion
+}
+
+//if the checkbox state is changed, run a funtion
+checkbox.addEventListener("change", function () {
+  //check if the checkbox is checked or not
+  if (checkbox.checked) {
+    darkmode(); //if the checkbox is checked, run this funtion
+  } else {
+    nodark(); //else run this funtion
+  }
+});
+
+//function for checkbox when checkbox is checked
+function darkmode() {
+  document.body.classList.add("dark-mode");
+  document.documentElement.style.setProperty("--color1", "#ffffff");
+  document.documentElement.style.setProperty("--color2", "#d8d8d8");
+  document.documentElement.style.setProperty("--color4", "#0f0f0f");
+  document.documentElement.style.setProperty("--color5", "rgb(0 0 0 / 93%)"); //add a class to the body tag
+  checkbox.checked = true; //set checkbox to be checked state
+  sessionStorage.setItem("mode", "dark"); //store a name & value to know that dark mode is on
+}
+
+//function for checkbox when checkbox is not checked
+function nodark() {
+  document.body.classList.remove("dark-mode");
+  document.documentElement.style.setProperty("--color1", "#000000");
+  document.documentElement.style.setProperty("--color2", "#6c6c6c");
+  document.documentElement.style.setProperty("--color4", "#ffffff"); //remove added class from body tag
+  document.documentElement.style.setProperty(
+    "--color5",
+    "rgba(255, 255, 255, 0.925)"
+  );
+  checkbox.checked = false; //set checkbox to be unchecked state
+  sessionStorage.setItem("mode", "light"); //store a name & value to know that dark mode is off or light mode is on
+}
+// ----------HAMBURGER-----------
+function toggleMobileMenu(menu) {
+  menu.classList.toggle("open");
+}

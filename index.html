@@ -11,15 +11,42 @@
 </head>
 
 <body>
-    <nav>
-        <p>marso.dev</p>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="index.html">About</a></li>
-            <li><a href="index.html">Projects</a></li>
-            <li><a href="index.html">Contact</a></li>
-        </ul>
-    </nav>
+    <header>
+        <nav>
+            <div class="nightmode">
+                <label>
+                    <input type="checkbox" id="darkmode">
+                    <ion-icon name="sunny" class="sunny"></ion-icon>
+                    <ion-icon name="moon" class="moon"></ion-icon>
+                    <span class="toggle"></span>
+                </label>
+                <p>marso.dev</p>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">About</a></li>
+                <li><a href="index.html">Projects</a></li>
+                <li><a href="index.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+                <label>
+                    <input type="checkbox" id="darkmode2">
+                    <ion-icon name="sunny" class="sunny2"></ion-icon>
+                    <ion-icon name="moon" class="moon2"></ion-icon>
+                    <span class="toggle2"></span>
+                </label>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">About</a></li>
+                <li><a href="index.html">Projects</a></li>
+                <li><a href="index.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
     <section class="header">
         <div class="header-left">
             <div class="header-left-container">
@@ -38,8 +65,27 @@
                 <a href="https://github.com/marsodeb" target="_blank"><i class="fab fa-github"></i></a>
             </div>
         </div>
-        <img class="header-right" src="assets/img/me.jpg" alt="me" id="imgme" />
+        <div class="header-img"></div>
     </section>
+    <section class="about-content">
+        <div class="about-container">
+            <img class="about-left" src="assets/img/desk.jpg" alt="desk" id="imgdesk" />
+            <div class="about-container-right">
+                <h3>ABOUT ME</h3>
+                <h4>Blablabla</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt laborum et rem officia facere
+                    ea
+                    eos
+                    hic
+                    recusandae obcaecati sequi voluptatum, nisi, quibusdam quos voluptatibus a iste dolore inventore
+                    animi
+                    quae
+                    aliquid fugiat necessitatibus similique aspernatur. Culpa harum possimus recusandae!</p>
+            </div>
+        </div>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="script.js"></script>
 </body>
 
