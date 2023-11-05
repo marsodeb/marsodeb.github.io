@@ -90,7 +90,13 @@ function darkmode2() {
   document.documentElement.style.setProperty("--color1", "#ffffff");
   document.documentElement.style.setProperty("--color2", "#d8d8d8");
   document.documentElement.style.setProperty("--color4", "#0f0f0f");
-  document.documentElement.style.setProperty("--color5", "rgb(0 0 0 / 93%)"); //add a class to the body tag
+  document.documentElement.style.setProperty("--color6", "#2d2d2d");
+  document.documentElement.style.setProperty("--color5", "rgb(0 0 0 / 93%)");
+  document.documentElement.style.setProperty("--color7", "#0f0f0fda");
+  document.documentElement.style.setProperty(
+    "--color8",
+    "rgba(0, 0, 0, 0.119)"
+  ); //add a class to the body tag
   checkbox2.checked = true; //set checkbox to be checked state
   sessionStorage.setItem("mode", "dark"); //store a name & value to know that dark mode is on
 }
@@ -98,9 +104,15 @@ function darkmode2() {
 //function for checkbox when checkbox is not checked
 function nodark2() {
   document.body.classList.remove("dark-mode");
-  document.documentElement.style.setProperty("--color1", "#000000");
+  document.documentElement.style.setProperty("--color1", "#2f2f2f");
   document.documentElement.style.setProperty("--color2", "#6c6c6c");
-  document.documentElement.style.setProperty("--color4", "#ffffff"); //remove added class from body tag
+  document.documentElement.style.setProperty("--color4", "#ffffff");
+  document.documentElement.style.setProperty("--color6", "#dfdfdf");
+  document.documentElement.style.setProperty("--color7", "#ffffffda");
+  document.documentElement.style.setProperty(
+    "--color8",
+    "rgba(243, 243, 243, 0.341)"
+  ); //re //remove added class from body tag
   document.documentElement.style.setProperty(
     "--color5",
     "rgba(255, 255, 255, 0.925)"
@@ -134,7 +146,14 @@ function darkmode() {
   document.documentElement.style.setProperty("--color1", "#ffffff");
   document.documentElement.style.setProperty("--color2", "#d8d8d8");
   document.documentElement.style.setProperty("--color4", "#0f0f0f");
-  document.documentElement.style.setProperty("--color5", "rgb(0 0 0 / 93%)"); //add a class to the body tag
+  document.documentElement.style.setProperty("--color6", "#2d2d2d");
+  document.documentElement.style.setProperty("--color5", "rgb(0 0 0 / 93%)");
+  document.documentElement.style.setProperty("--color7", "#0f0f0fda");
+  document.documentElement.style.setProperty(
+    "--color8",
+    "rgba(0, 0, 0, 0.119)"
+  );
+  //add a class to the body tag
   checkbox.checked = true; //set checkbox to be checked state
   sessionStorage.setItem("mode", "dark"); //store a name & value to know that dark mode is on
 }
@@ -142,9 +161,15 @@ function darkmode() {
 //function for checkbox when checkbox is not checked
 function nodark() {
   document.body.classList.remove("dark-mode");
-  document.documentElement.style.setProperty("--color1", "#000000");
+  document.documentElement.style.setProperty("--color1", "#2f2f2f");
   document.documentElement.style.setProperty("--color2", "#6c6c6c");
-  document.documentElement.style.setProperty("--color4", "#ffffff"); //remove added class from body tag
+  document.documentElement.style.setProperty("--color4", "#ffffff");
+  document.documentElement.style.setProperty("--color6", "#dfdfdf");
+  document.documentElement.style.setProperty("--color7", "#ffffffda");
+  document.documentElement.style.setProperty(
+    "--color8",
+    "rgba(243, 243, 243, 0.341)"
+  ); //remove added class from body tag
   document.documentElement.style.setProperty(
     "--color5",
     "rgba(255, 255, 255, 0.925)"
