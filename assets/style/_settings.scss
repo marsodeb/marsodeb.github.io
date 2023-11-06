@@ -1,0 +1,48 @@
+$color1: #2f2f2f;
+$color2: #6c6c6c;
+$color3: #cbcbcb;
+$color4: #ffffff;
+$color5: rgba(255, 255, 255, 0.925);
+$color6: #e7e7e7;
+$color7: #ffffffda;
+$color8: rgba(243, 243, 243, 0.341);
+  
+  @font-face {
+    font-family: "Onest";
+    src: url(../font/Onest-Regular.ttf);
+  }
+  @font-face {
+    font-family: "OnestBlack";
+    src: url(../font/Onest-Black.ttf);
+  }
+  @font-face {
+    font-family: "OnestSemi";
+    src: url(../font/Onest-SemiBold.ttf);
+  }
+  @font-face {
+    font-family: "OnestMid";
+    src: url(../font/Onest-Medium.ttf);
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  *::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background-color: var(--color2);
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+  }
+  body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    transition: 0.5s ease-out;
+  }

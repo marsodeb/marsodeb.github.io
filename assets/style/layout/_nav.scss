@@ -1,0 +1,39 @@
+nav {
+    user-select: none;
+    align-items: center;
+    background-color: $color4;
+    box-shadow: 0 0 30px $color6;
+    display: flex;
+    font-size: 1.7rem;
+    height: auto;
+    justify-content: space-between;
+    left: 0;
+    padding: 25px 40px 25px 40px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 200;
+    ul {
+        gap: 2rem;
+        display: flex;
+        li {
+            font-family: "OnestSemi", sans-serif;
+            font-size: 1.2rem;
+      }
+    }
+    a {
+        text-decoration: none;
+        transition: 0.2s ease;
+        color: $color1;
+        &:hover{
+            color: rgb(108, 108, 108);      
+        }
+      }
+      p {
+    display: flex;
+    justify-content: flex-start;
+    font-family: "OnestBlack", sans-serif;
+    font-size: 1.9rem;
+    color: $color1;
+  }
+}
