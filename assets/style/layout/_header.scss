@@ -1,121 +1,139 @@
 header {
-    min-height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 0 auto;
+  padding: 0 4em;
+  max-width: 1400px;
+  gap: 10rem;
+  @media screen and (max-width: 1150px) {
+    padding: 11rem 0;
+    flex-direction: column-reverse;
+    gap: 0px;
+  }
+  @media screen and (max-width: 390px) {
+    padding: 4rem 0;
+  }
+  .left-header {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    width: 50rem;
     position: relative;
-    margin: 0 auto;
-    max-width: 1400px;
-    padding: 0 4rem;
-    gap: 10rem;
-    @media screen and (max-width: 1100px) {
-      padding: 11rem 0;
-      flex-direction: column-reverse;
-      gap: 0px;
+    text-align: justify;
+    align-items: center;
+    @media screen and (max-width: 1150px) {
+      padding-top: 35px;
+      text-align: center;
+      width: 70%;
+      margin: 0 auto;
     }
-    @media screen and (max-width: 390px) {
-      padding: 4rem 0;
-    }
-    .left-header {
-            display: flex;
-            flex-direction: column;
-            max-width: 50rem;
-            position: relative;
-            @media screen and (max-width: 1100px){
-              padding-top: 35px;
-              text-align: center;
-              width: 80%;
-              margin: 0 auto;
-            }
-            .title {
-              #target {
-                display: inline;
-                &::after {
-                    transform: translateY(15px);
-                    display: inline-block;
-                    content: "";
-                    height: 5rem;
-                    width: 4px;
-                    background: var(--color1);
-                    animation: anim2 0.8s linear infinite;
-                    @media screen and (max-width: 730px){
-                      height: 4rem;
-                    }
-                    @media screen and (max-width: 570px){
-                      height: 3.5rem;
-                    }
-                }
-              }
-            }
-            h1 {
-                color: $color1;
-                font-family: "OnestBlack", sans-serif;
-                font-size: 4rem;
-                @media screen and (max-width: 730px){
-                  font-size: 3rem;
-                }
-                @media screen and (max-width: 570px) {
-                  font-size: 2.1rem;
-                }
-              }
-              p {
-                padding: 25px 0;
-                font-family: "OnestMid", sans-serif;
-                font-size: 1.2rem;
-                color: $color2;
-                letter-spacing: 1px;
-              }
-              .tech {
-                border-top: 1px solid $color3;
-                padding-top: 25px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-
-              h2 {
-                color: $color1;
-                letter-spacing: 2px;
-                text-transform: uppercase;
-                font-size: 1rem;
-                padding-right: 10px;
-                font-family: "OnestBlack", sans-serif;
-                border-right: 1px solid $color3;
-              }
-              img {
-                padding-left: 10px;
-                width: 100px;
-              }
+    .title {
+      #target {
+        display: inline;
+        &::after {
+          transform: translateY(15px);
+          display: inline-block;
+          content: "";
+          height: 4.5rem;
+          width: 4px;
+          background: var(--color1);
+          animation: anim2 0.8s linear infinite;
+          @media screen and (max-width: 730px) {
+            height: 4rem;
           }
-          a {
-            text-decoration: none;
+          @media screen and (max-width: 570px) {
+            transform: translateY(10px);
+            height: 3rem;
           }
-          i {
-            display: flex;
-            justify-content: center;
-            padding: 10px 0;
-            font-size: 1.7rem;
-            color: $color1;
+          @media screen and (max-width: 390px) {
+            height: 2rem;
+            transform: translateY(5px);
           }
         }
-        .header-right-img {
-            background-image: url(/assets/img/me.jpg);
-            animation: anim 30s infinite;
-            background-position: 50%;
-            background-repeat: no-repeat;
-            background-size: cover;
-            border: 3px solid $color1;
-            border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-            height: 35rem;
-            position: relative;
-            transition: all 0.3s ease-in-out;
-            width: 35rem;
-            @media screen and (max-width: 730px){
-              height: 25rem;
-              width: 25rem;
-            }
-            @media screen and (max-width: 570px) {
-                height: 20rem;
-                width: 20rem;
-              }
-          }
+      }
+    }
+    h1 {
+      color: $color1;
+      font-family: "OnestBlack", sans-serif;
+      font-size: 3.5rem;
+      @media screen and (max-width: 730px) {
+        font-size: 3rem;
+      }
+      @media screen and (max-width: 570px) {
+        font-size: 2.1rem;
+      }
+      @media screen and (max-width: 390px) {
+        font-size: 1.7rem;
+      }
+      @media screen and (max-width: 350px) {
+        font-size: 1.2rem;
+      }
+    }
+    p {
+      max-width: 35rem;
+      padding: 25px 0;
+      font-family: "OnestMid", sans-serif;
+      font-size: 1rem;
+      color: $color2;
+      letter-spacing: 1px;
+    }
+    .tech {
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid $color3;
+      border-radius: 10px;
+      margin-bottom: 25px;
+
+      h2 {
+        color: $color1;
+        font-size: 1rem;
+        padding-right: 10px;
+        font-family: "OnestSemi", sans-serif;
+        border-right: 2px solid $color3;
+      }
+      img {
+        padding-left: 10px;
+        width: 9rem;
+      }
+    }
+    a {
+      text-decoration: none;
+      margin: 0 auto;
+    }
+    i {
+      display: flex;
+      justify-content: center;
+      font-size: 1.7rem;
+      color: $color1;
+    }
   }
+  .header-right-img {
+    background-image: url(/assets/img/me.jpg);
+    animation: anim 30s infinite;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 3px solid $color1;
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    height: 35rem;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    width: 35rem;
+    @media screen and (max-width: 730px) {
+      height: 25rem;
+      width: 25rem;
+    }
+    @media screen and (max-width: 570px) {
+      height: 20rem;
+      width: 20rem;
+    }
+    @media screen and (max-width: 390px) {
+      height: 15rem;
+      width: 15rem;
+    }
+  }
+}
