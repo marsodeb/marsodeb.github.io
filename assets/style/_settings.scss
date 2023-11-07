@@ -1,12 +1,21 @@
-$color1: #2f2f2f;
-$color2: #6c6c6c;
-$color3: #cbcbcb;
-$color4: #ffffff;
-$color5: rgba(255, 255, 255, 0.925);
-$color6: #e7e7e7;
-$color7: #ffffffda;
-$color8: rgba(243, 243, 243, 0.341);
-  
+:root {
+  --color1: #2f2f2f;
+  --color2: #6c6c6c;
+  --color3: #cbcbcb;
+  --color4: #ffffff;
+  --color5: rgba(255, 255, 255, 0.925);
+  --color6: #e7e7e7;
+  --color7: #ffffffda;
+  --color8: rgba(243, 243, 243, 0.341);
+}
+$color1: var(--color1);
+$color2: var(--color2);
+$color3: var(--color3);
+$color4: var(--color4);
+$color5: var(--color5);
+$color6: var(--color6);
+$color7: var(--color7);
+$color8: var(--color8);
   @font-face {
     font-family: "Onest";
     src: url(../font/Onest-Regular.ttf);

@@ -4,7 +4,7 @@
 @media screen and (max-width: 450px) {
   .nav-mobile-container {
     font-family: "OnestBlack", sans-serif;
-    background: var(--color7);
+    background: $color7;
     padding: 0 20px;
     height: 50px;
     width: 100%;
@@ -13,6 +13,7 @@
     z-index: 1;
     position: fixed;
     justify-content: center;
+    align-items: center;
     #hamburger-icon {
       margin: auto 0;
       display: none;
@@ -23,7 +24,7 @@
       div {
         width: 35px;
         height: 3px;
-        background-color: var(--color1);
+        background-color: $color1;
         margin: 6px 0;
         transition: 0.4s;
       }
@@ -34,7 +35,7 @@
     text-transform: uppercase;
     user-select: none;
     align-items: center;
-    background-color: var(--color5);
+    background-color: $color5;
     display: flex;
     flex-direction: column;
     gap: 60px;
@@ -54,8 +55,11 @@
     left: 0;
     width: 100%;
     a {
-      color: var(--color1);
+      color: $color1;
       text-decoration: none;
     }
   }
+}
+body.menu-on {
+background-color: pink;
 }

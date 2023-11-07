@@ -39,7 +39,7 @@ header {
           content: "";
           height: 4.5rem;
           width: 4px;
-          background: var(--color1);
+          background: $color1;
           animation: anim2 0.8s linear infinite;
           @media screen and (max-width: 730px) {
             height: 4rem;
@@ -120,10 +120,10 @@ header {
     background-size: cover;
     border: 3px solid $color1;
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-    height: 35rem;
+    height: 30rem;
     position: relative;
     transition: all 0.3s ease-in-out;
-    width: 35rem;
+    width: 30rem;
     @media screen and (max-width: 730px) {
       height: 25rem;
       width: 25rem;

@@ -1,0 +1,109 @@
+.nightmode {
+label {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+input {
+    position: absolute;
+    opacity: 0;
+}
+.sunny {
+    position: absolute;
+    font-size: 1em;
+    color: #0f0f0f;
+    transform: scale(0);
+    transition: 0.3s ease;
+  }
+  input:checked ~ .sunny {
+    transition-delay: 0.3s;
+    transform: scale(1) rotate(360deg);
+  }
+  .moon {
+    font-size: 1em;
+    color: #ffffff;
+    transition: 0.3s ease;
+    transition-delay: 0.3s;
+  }
+  input:checked ~ .moon {
+    transition-delay: 0s;
+    transform: rotate(360deg) scale(0);
+  }
+  .toggle {
+    position: absolute;
+    display: block;
+    width: 35px;
+    height: 35px;
+    background: #0f0f0f;
+    border-radius: 50%;
+    box-shadow: inset 0 8px 60px rgba(255, 255, 255, 0.1),
+      inset 0 8px 8px rgba(255, 255, 255, 0.1),
+      inset 0 -4px 4px rgba(255, 255, 255, 0.1);
+    z-index: -1;
+    transition: 1s;
+  }
+  input:checked ~ .toggle {
+    box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.1),
+      inset 0 8px 8px rgba(0, 0, 0, 0.1), inset 0 -4px 4px rgba(0, 0, 0, 0.1);
+    background: #ffffff;
+  }
+}
+}
+.nightmode-mobile {
+    display: flex;
+    position: fixed;
+    left: 25px;
+    label {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      input {
+        position: absolute;
+        opacity: 0;
+      }
+      .sunny2 {
+        position: absolute;
+        font-size: 1em;
+        color: #0f0f0f;
+        transform: scale(0);
+        transition: 0.3s ease;
+      }
+      input:checked ~ .sunny2 {
+        transition-delay: 0.3s;
+        transform: scale(1) rotate(360deg);
+      }
+      .moon2 {
+        font-size: 1em;
+        color: #ffffff;
+        transition: 0.3s ease;
+        transition-delay: 0.3s;
+      }
+      input:checked ~ .moon2 {
+        transition-delay: 0s;
+        transform: rotate(360deg) scale(0);
+      }
+      .toggle2 {
+        position: absolute;
+        display: block;
+        width: 30px;
+        height: 30px;
+        background: #0f0f0f;
+        border-radius: 50%;
+        box-shadow: inset 0 8px 60px rgba(255, 255, 255, 0.1),
+          inset 0 8px 8px rgba(255, 255, 255, 0.1),
+          inset 0 -4px 4px rgba(255, 255, 255, 0.1);
+        z-index: -1;
+        transition: 1s;
+      }
+      input:checked ~ .toggle2 {
+        box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.1),
+          inset 0 8px 8px rgba(0, 0, 0, 0.1), inset 0 -4px 4px rgba(0, 0, 0, 0.1);
+        background: #ffffff;
+      }
+    }
+body.dark-mode {
+    transition: 0.2s ease-out;
+    background: #0f0f0f;
+  }
