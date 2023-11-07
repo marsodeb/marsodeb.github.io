@@ -23,6 +23,7 @@ header {
     position: relative;
     text-align: justify;
     align-items: center;
+    transition: all 0.3s ease;
     @media screen and (max-width: 1150px) {
       padding-top: 35px;
       text-align: center;
@@ -43,7 +44,7 @@ header {
           @media screen and (max-width: 730px) {
             height: 4rem;
           }
-          @media screen and (max-width: 570px) {
+          @media screen and (max-width: 620px) {
             transform: translateY(10px);
             height: 3rem;
           }
@@ -61,7 +62,7 @@ header {
       @media screen and (max-width: 730px) {
         font-size: 3rem;
       }
-      @media screen and (max-width: 570px) {
+      @media screen and (max-width: 620px) {
         font-size: 2.1rem;
       }
       @media screen and (max-width: 450px) {

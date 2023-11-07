@@ -13,9 +13,11 @@ nav {
   top: 0;
   width: 100%;
   z-index: 200;
+  transition: all 0.3s ease-in-out;
   @media screen and (max-width: 730px) {
     flex-direction: column;
     ul {
+      transition: all 0.3s ease-in-out;
       padding: 15px 0 0;
     }
   }
