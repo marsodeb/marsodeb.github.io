@@ -186,7 +186,6 @@ header {
   margin: 0 auto;
   padding: 0 4em;
   max-width: 1400px;
-  gap: 10rem;
 }
 @media screen and (max-width: 1150px) {
   header {
